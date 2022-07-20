@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC003_Add Account - with data driven</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3f40ef4f-de3e-4334-8aa1-8bf5307f325c</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>95cc04dd-b1b2-4b4b-a390-94dbc69c2edc</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f32836a9-c200-487e-b7e2-92b0258dd959</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'yusuf'</defaultValue>
+      <description></description>
+      <id>95cc04dd-b1b2-4b4b-a390-94dbc69c2edc</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variable>
+   <variable>
+      <defaultValue>'10000'</defaultValue>
+      <description></description>
+      <id>f32836a9-c200-487e-b7e2-92b0258dd959</id>
+      <masked>false</masked>
+      <name>ammount</name>
+   </variable>
+</TestCaseEntity>

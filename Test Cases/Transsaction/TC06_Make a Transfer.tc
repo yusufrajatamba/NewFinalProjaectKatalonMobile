@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC06_Make a Transfer</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c7aa001c-fd5d-41a1-b7dd-13e3c336b39f</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6f8d9510-11bd-4794-9700-190e4b872680</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3731efa6-04d7-4b0d-8ef9-78b67f784c4d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'yusuf'</defaultValue>
+      <description></description>
+      <id>6f8d9510-11bd-4794-9700-190e4b872680</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variable>
+   <variable>
+      <defaultValue>'10000'</defaultValue>
+      <description></description>
+      <id>3731efa6-04d7-4b0d-8ef9-78b67f784c4d</id>
+      <masked>false</masked>
+      <name>ammount</name>
+   </variable>
+</TestCaseEntity>
