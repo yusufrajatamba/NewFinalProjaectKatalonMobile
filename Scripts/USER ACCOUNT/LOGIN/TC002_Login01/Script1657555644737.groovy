@@ -17,29 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-check = Mobile.verifyElementNotVisible(findTestObject('men account/Accounts'), 4)
+Mobile.setText(findTestObject('Object Repository/Login Page/username'), 'Yusuf27', 5)
 
-if (check == true) {
-    Mobile.tap(findTestObject('men account/widget'), 3)
+Mobile.setText(findTestObject('Object Repository/Login Page/password'), 'Sembilan7', 5)
 
-    Mobile.tap(findTestObject('men account/Accounts'), 3)
-} else {
-    Mobile.tap(findTestObject('men account/Accounts'), 3)
-}
+Mobile.tap(findTestObject('Object Repository/Login Page/Remember Credentials'), 5)
 
-Mobile.verifyElementVisible(findTestObject('men account/ViewGroup1'), 4)
+Mobile.tap(findTestObject('Object Repository/Login Page/btn_loginLOGIN'), 5)
 
-if (true) {
-    Mobile.tap(findTestObject('men account/ViewGroup1'), 3)
+WebUI.verifyElementText(findTestObject('Login Page/Dashbord'), 'Dashbord', FailureHandling.CONTINUE_ON_FAILURE)
 
-    Mobile.tap(findTestObject('men account/Check account transsaction/accountSpinner'), 0)
+WebUI.verifyElementText(findTestObject('Login Page/Yusuf. Welcome to the Bank App Demo. Happy Tuesday'), 'God morning,Yusuf.Welcome to the Bank App Demo. Happy Tuesday', 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
-    Mobile.tap(findTestObject('men account/Check account transsaction/typeSpinner'), 0)
-
-    Mobile.tap(findTestObject('men account/Check account transsaction/orderbySpinner'), 0)
-} else {
-    Mobile.tap(findTestObject('men account/ImageButtonadd'), 3)
-
-    WebUI.callTestCase(findTestCase('USER ACCOUNT/TC003_Add Account'), [:], FailureHandling.STOP_ON_FAILURE)
-}
+checkrespon = Mobile.verifyElementText(findTestObject('Login Page/android.widget.TextView - You do not have any accounts, click below to add an account'), 
+    'You do not have any accounts, click below to add an account', FailureHandling.CONTINUE_ON_FAILURE)
 

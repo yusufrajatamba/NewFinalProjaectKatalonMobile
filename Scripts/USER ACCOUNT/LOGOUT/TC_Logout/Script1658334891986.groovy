@@ -17,13 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('Object Repository/Transsaction/Add Deposit/ImageButton'), 0)
+WebUI.callTestCase(findTestCase('USER ACCOUNT/REGISTER/TC001_Register Account'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Transsaction/Add Deposit/Make a Deposit'), 0)
+WebUI.callTestCase(findTestCase('USER ACCOUNT/LOGIN/TC002_Login01'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.setText(findTestObject('Object Repository/Transsaction/Add Deposit/Enter Deposit Amount ()'), '3000', 0)
+Mobile.tap(findTestObject('Transsaction/Make Payee/ImageButton (1)'), 5)
 
-Mobile.tap(findTestObject('Object Repository/Transsaction/Add Deposit/DEPOSIT'), 0)
+Mobile.tap(findTestObject('Transsaction/Make Payee/Logout'), 3)
 
 Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 

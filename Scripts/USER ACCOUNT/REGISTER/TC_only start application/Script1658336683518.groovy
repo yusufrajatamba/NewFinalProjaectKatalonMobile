@@ -17,19 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.setText(findTestObject('Object Repository/Login Page/username'), 'Yusuf27', 5)
+Mobile.startApplication('C:\\Users\\095050\\Documents\\BootCamp Hacktiv8 x BFI\\KATALON SUPER\\FinalProjectKatalon_Mobile Testing\\FinalProjectKatalon_Mobile\\APK\\app-debug.apk', 
+    false)
 
-Mobile.setText(findTestObject('Object Repository/Login Page/password'), 'Sembilan7', 5)
+Mobile.verifyElementVisible(findTestObject('Register/ViewGroup'), 5)
 
-Mobile.tap(findTestObject('Object Repository/Login Page/Remember Credentials'), 5)
-
-Mobile.tap(findTestObject('Object Repository/Login Page/btn_loginLOGIN'), 5)
-
-WebUI.verifyElementText(findTestObject('Login Page/Dashbord'), 'Dashbord')
-
-WebUI.verifyElementText(findTestObject('Login Page/Yusuf. Welcome to the Bank App Demo. Happy Tuesday'), 'God morning,Yusuf.Welcome to the Bank App Demo. Happy Tuesday', 
-    FailureHandling.CONTINUE_ON_FAILURE)
-
-checkrespon = Mobile.verifyElementText(findTestObject('Login Page/android.widget.TextView - You do not have any accounts, click below to add an account'), 
-    'You do not have any accounts, click below to add an account')
+Mobile.verifyElementVisible(findTestObject('Register/Password'), 5)
 

@@ -15,21 +15,21 @@
       <guid>f3fee99d-26f8-4d2d-ac24-f2d3e73616ea</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/USER ACCOUNT/TC001_Register Account</testCaseId>
+      <testCaseId>Test Cases/USER ACCOUNT/REGISTER/TC001_Register Account</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>267bbcaa-c4de-4524-82ef-718e29328903</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/USER ACCOUNT/TC002_Login01</testCaseId>
+      <testCaseId>Test Cases/USER ACCOUNT/LOGIN/TC002_Login01</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>0ce5a501-cb17-432c-8e18-7e0768e09b47</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/USER ACCOUNT/TC003_Add Account - with data driven</testCaseId>
+      <testCaseId>Test Cases/USER ACCOUNT/ADD ACCOUNT/TC003_Add Account - with data driven</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>cb088838-2d73-4591-a340-fe426f1c305a</id>

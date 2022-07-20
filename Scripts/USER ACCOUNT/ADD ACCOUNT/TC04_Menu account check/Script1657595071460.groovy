@@ -17,13 +17,29 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('Object Repository/Transsaction/Add Deposit/ImageButton'), 0)
+check = Mobile.verifyElementNotVisible(findTestObject('men account/Accounts'), 4)
 
-Mobile.tap(findTestObject('Object Repository/Transsaction/Add Deposit/Make a Deposit'), 0)
+if (check == true) {
+    Mobile.tap(findTestObject('men account/widget'), 3)
 
-Mobile.setText(findTestObject('Object Repository/Transsaction/Add Deposit/Enter Deposit Amount ()'), '3000', 0)
+    Mobile.tap(findTestObject('men account/Accounts'), 3)
+} else {
+    Mobile.tap(findTestObject('men account/Accounts'), 3)
+}
 
-Mobile.tap(findTestObject('Object Repository/Transsaction/Add Deposit/DEPOSIT'), 0)
+Mobile.verifyElementVisible(findTestObject('men account/ViewGroup1'), 4)
 
-Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+if (true) {
+    Mobile.tap(findTestObject('men account/ViewGroup1'), 3)
+
+    Mobile.tap(findTestObject('men account/Check account transsaction/accountSpinner'), 0)
+
+    Mobile.tap(findTestObject('men account/Check account transsaction/typeSpinner'), 0)
+
+    Mobile.tap(findTestObject('men account/Check account transsaction/orderbySpinner'), 0)
+} else {
+    Mobile.tap(findTestObject('men account/ImageButtonadd'), 3)
+
+    WebUI.callTestCase(findTestCase('USER ACCOUNT/ADD ACCOUNT/TC003_Add Account For Test Suites'), [:], FailureHandling.STOP_ON_FAILURE)
+}
 

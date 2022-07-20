@@ -17,13 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('Object Repository/Transsaction/Add Deposit/ImageButton'), 0)
+WebUI.callTestCase(findTestCase('USER ACCOUNT/REGISTER/TC001_Register Account'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Transsaction/Add Deposit/Make a Deposit'), 0)
+Mobile.setText(findTestObject('Object Repository/Login Page/username'), 'Yusuf27', 5)
 
-Mobile.setText(findTestObject('Object Repository/Transsaction/Add Deposit/Enter Deposit Amount ()'), '3000', 0)
+Mobile.setText(findTestObject('Object Repository/Login Page/password'), 'Sembilan7', 5)
 
-Mobile.tap(findTestObject('Object Repository/Transsaction/Add Deposit/DEPOSIT'), 0)
+Mobile.tap(findTestObject('Object Repository/Login Page/Remember Credentials'), 5)
 
-Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Object Repository/Login Page/btn_loginLOGIN'), 5)
+
+WebUI.verifyElementText(findTestObject('Login Page/Dashbord'), 'Dashbord')
+
+WebUI.verifyElementText(findTestObject('Login Page/Yusuf. Welcome to the Bank App Demo. Happy Tuesday'), 'God morning,Yusuf.Welcome to the Bank App Demo. Happy Tuesday', 
+    FailureHandling.CONTINUE_ON_FAILURE)
+
+checkrespon = Mobile.verifyElementText(findTestObject('Login Page/android.widget.TextView - You do not have any accounts, click below to add an account'), 
+    'You do not have any accounts, click below to add an account')
 

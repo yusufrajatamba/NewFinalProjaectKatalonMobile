@@ -17,13 +17,25 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('Object Repository/Transsaction/Add Deposit/ImageButton'), 0)
+WebUI.callTestCase(findTestCase('USER ACCOUNT/REGISTER/TC001_Register Account'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Transsaction/Add Deposit/Make a Deposit'), 0)
+WebUI.callTestCase(findTestCase('USER ACCOUNT/LOGIN/TC002_Login01'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.setText(findTestObject('Object Repository/Transsaction/Add Deposit/Enter Deposit Amount ()'), '3000', 0)
+check = Mobile.verifyElementVisible(findTestObject('ADD ACCOOUNT/Accounts'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Transsaction/Add Deposit/DEPOSIT'), 0)
+if (check == false) {
+    Mobile.tap(findTestObject('ADD ACCOOUNT/widget.ImageButton'), 5)
 
-Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+    Mobile.tap(findTestObject('ADD ACCOOUNT/Accounts'), 3)
+
+    Mobile.tap(findTestObject('ADD ACCOOUNT/add account bawah'), 3)
+
+    Mobile.setText(findTestObject('ADD ACCOOUNT/Account Name'), name, 3)
+
+    Mobile.setText(findTestObject('ADD ACCOOUNT/Initial Balance (Optional)'), '10000', 5)
+
+    Mobile.tap(findTestObject('ADD ACCOOUNT/Button - ADD finish'), 4)
+
+    Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+}
 

@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC003_Add Account</name>
+   <name>TC003_Add Account -run</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>dbbae193-000f-475f-a1c6-cff4d5a50a4c</testCaseGuid>
+   <testCaseGuid>e1294a89-4ffe-4d25-a4ae-afc77c7039e0</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>086b4850-af40-4bdd-9ceb-038a4c9ee187</variableId>
+      <variableId>3636ca2d-38f6-4c59-9ed7-76fd32ea0674</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>95e65728-af41-4b36-9937-67c0ff049c86</variableId>
+      <variableId>605811f8-2563-424b-a1c2-b4c32596e819</variableId>
    </variableLinks>
    <variable>
       <defaultValue>'yusuf'</defaultValue>
       <description></description>
-      <id>086b4850-af40-4bdd-9ceb-038a4c9ee187</id>
+      <id>3636ca2d-38f6-4c59-9ed7-76fd32ea0674</id>
       <masked>false</masked>
       <name>name</name>
    </variable>
    <variable>
       <defaultValue>'10000'</defaultValue>
       <description></description>
-      <id>95e65728-af41-4b36-9937-67c0ff049c86</id>
+      <id>605811f8-2563-424b-a1c2-b4c32596e819</id>
       <masked>false</masked>
       <name>ammount</name>
    </variable>
